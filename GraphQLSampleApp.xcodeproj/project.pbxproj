@@ -13,6 +13,11 @@
 		20D5EB972949278C00017CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EB952949278C00017CC0 /* Main.storyboard */; };
 		20D5EB992949278D00017CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EB982949278D00017CC0 /* Assets.xcassets */; };
 		20D5EB9C2949278D00017CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EB9A2949278D00017CC0 /* LaunchScreen.storyboard */; };
+		20D5EBA429492E6C00017CC0 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EBA329492E6C00017CC0 /* schema.json */; };
+		20D5EBA62949343300017CC0 /* LaunchQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EBA52949343300017CC0 /* LaunchQuery.graphql */; };
+		20D5EBA9294935F600017CC0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EBA8294935F600017CC0 /* API.swift */; };
+		20D5EBAB2949367500017CC0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EBAA2949367500017CC0 /* Network.swift */; };
+		D42BC98E6007904C56B44189 /* Pods_GraphQLSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C13B31D2FD1BFA5982834A4 /* Pods_GraphQLSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		20D5EB982949278D00017CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D5EB9B2949278D00017CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20D5EB9D2949278D00017CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D5EBA329492E6C00017CC0 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
+		20D5EBA52949343300017CC0 /* LaunchQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchQuery.graphql; sourceTree = "<group>"; };
+		20D5EBA8294935F600017CC0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		20D5EBAA2949367500017CC0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5C13B31D2FD1BFA5982834A4 /* Pods_GraphQLSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphQLSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50D0EC959EA0D104BCA4C6B /* Pods-GraphQLSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-GraphQLSampleApp/Pods-GraphQLSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F2EB8AEC98818C1376D451BC /* Pods-GraphQLSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLSampleApp.release.xcconfig"; path = "Target Support Files/Pods-GraphQLSampleApp/Pods-GraphQLSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42BC98E6007904C56B44189 /* Pods_GraphQLSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				20D5EB8E2949278C00017CC0 /* GraphQLSampleApp */,
 				20D5EB8D2949278C00017CC0 /* Products */,
+				8F33A0314B84B128D21E4E05 /* Pods */,
+				BBB9C6ACA72D8AEE85D59E0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,8 @@
 		20D5EB8E2949278C00017CC0 /* GraphQLSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				20D5EBA8294935F600017CC0 /* API.swift */,
+				20D5EBA329492E6C00017CC0 /* schema.json */,
 				20D5EB8F2949278C00017CC0 /* AppDelegate.swift */,
 				20D5EB912949278C00017CC0 /* SceneDelegate.swift */,
 				20D5EB932949278C00017CC0 /* ViewController.swift */,
@@ -63,8 +80,27 @@
 				20D5EB982949278D00017CC0 /* Assets.xcassets */,
 				20D5EB9A2949278D00017CC0 /* LaunchScreen.storyboard */,
 				20D5EB9D2949278D00017CC0 /* Info.plist */,
+				20D5EBA52949343300017CC0 /* LaunchQuery.graphql */,
+				20D5EBAA2949367500017CC0 /* Network.swift */,
 			);
 			path = GraphQLSampleApp;
+			sourceTree = "<group>";
+		};
+		8F33A0314B84B128D21E4E05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E50D0EC959EA0D104BCA4C6B /* Pods-GraphQLSampleApp.debug.xcconfig */,
+				F2EB8AEC98818C1376D451BC /* Pods-GraphQLSampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBB9C6ACA72D8AEE85D59E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C13B31D2FD1BFA5982834A4 /* Pods_GraphQLSampleApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20D5EBA02949278D00017CC0 /* Build configuration list for PBXNativeTarget "GraphQLSampleApp" */;
 			buildPhases = (
+				B54B9DEC14A32A2C8B6260C5 /* [CP] Check Pods Manifest.lock */,
 				20D5EB882949278C00017CC0 /* Sources */,
 				20D5EB892949278C00017CC0 /* Frameworks */,
 				20D5EB8A2949278C00017CC0 /* Resources */,
+				A192A4D594856440A16A06D7 /* [CP] Embed Pods Frameworks */,
+				20D5EBA72949356D00017CC0 /* Generate Apollo GraphQL API */,
 			);
 			buildRules = (
 			);
@@ -125,21 +164,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5EBA429492E6C00017CC0 /* schema.json in Resources */,
 				20D5EB9C2949278D00017CC0 /* LaunchScreen.storyboard in Resources */,
 				20D5EB992949278D00017CC0 /* Assets.xcassets in Resources */,
+				20D5EBA62949343300017CC0 /* LaunchQuery.graphql in Resources */,
 				20D5EB972949278C00017CC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20D5EBA72949356D00017CC0 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"${SRCROOT}/schema.json\" API.swift\n";
+		};
+		A192A4D594856440A16A06D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphQLSampleApp/Pods-GraphQLSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphQLSampleApp/Pods-GraphQLSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraphQLSampleApp/Pods-GraphQLSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54B9DEC14A32A2C8B6260C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphQLSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20D5EB882949278C00017CC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5EBAB2949367500017CC0 /* Network.swift in Sources */,
 				20D5EB942949278C00017CC0 /* ViewController.swift in Sources */,
 				20D5EB902949278C00017CC0 /* AppDelegate.swift in Sources */,
+				20D5EBA9294935F600017CC0 /* API.swift in Sources */,
 				20D5EB922949278C00017CC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +385,7 @@
 		};
 		20D5EBA12949278D00017CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50D0EC959EA0D104BCA4C6B /* Pods-GraphQLSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +413,7 @@
 		};
 		20D5EBA22949278D00017CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EB8AEC98818C1376D451BC /* Pods-GraphQLSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
